@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07testjs.html</title>
+    <style>
+
+    </style>
+
+<script>
+    function myemp() {
+        var nick = '', age='1', city='' ;
+        var data = '안내문';
+
+        nick = 'Romy';
+        age = 42;
+        city = 'Seoul';
+        
+        data ='<h3>이름:' +nick+ ' 나이:' +age+ ' 주소:' +city+'<h3>';
+        document.getElementById('display').innerHTML=data;
+    }
+
+    function mystar() {
+        var info= '';
+        star1='❤<br>';
+        star2='❤❤<br>';
+        star3='❤❤❤<br>';
+        star4='❤❤❤❤<br>';
+        star5='❤❤❤❤❤<p>';
+        info=star1+star2+star3+star4+star5;
+        document.getElementById('display').innerHTML=info;
+    }
+
+    function mystar2() {
+        var star2='🍳<br>🍳🍳<br>🍳🍳🍳<br>🍳🍳🍳🍳<br>🍳🍳🍳🍳🍳';
+        
+        info=star1+star2+star3+star4+star5;
+        document.getElementById('last').innerHTML=star2;
+    }
+
+    function mynumber(){
+        var su = 1;
+        
+
+    }
+</script>
+</head>
+
+<body>
+    <h2>07testjs.html</h2>
+    <img src="./images/cake1.jpg" width="100" height="100" alt="">
+    <img src="./images/cake1.jpg" width="100" height="100" alt="">
+    <img src="./images/cake1.jpg" width="100" height="100" alt=""><p></p>
+
+    <button onclick="myemp()">내정보</button>
+    <button onclick="mystar()">하트출력</button>
+    <button onclick="mystar2()">하트출력2</button>
+    <button onclick="mynumber()">숫자출력</button>
+    <p></p>
+    <div id="display"></div>
+    <div id="last"></div>
+    <div id="best"></div>
+
+</body>
+
+</html>
